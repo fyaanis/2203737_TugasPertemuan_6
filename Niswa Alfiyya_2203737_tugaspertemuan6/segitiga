@@ -1,0 +1,41 @@
+/*
+ *
+ * @author NISWA
+ */
+public class Segitiga {
+    private double alas;
+    private double tinggi;
+    private double sisi;
+
+    public Segitiga() {
+        this.alas = 0;
+        this.tinggi = 0;
+        this.sisi = 0;
+    }
+
+    public Segitiga(double alasBaru, double tinggiBaru, double sisiBaru) {
+        this.alas = alasBaru;
+        this.tinggi = tinggiBaru;
+        this.sisi = sisiBaru;
+    }
+
+    public double getLuas() {
+        return 0.5 * alas * tinggi;
+    }
+
+    public double getKeliling() {
+        return alas + tinggi + sisi;
+    }
+
+    public void setAlas(double alasBaru) {
+        this.alas = alasBaru;
+    }
+
+    public void setTinggi(double tinggiBaru) {
+        this.tinggi = tinggiBaru;
+    }
+
+    public void setSisi(double sisiBaru) {
+        this.sisi = sisiBaru;
+    }
+}
